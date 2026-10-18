@@ -82,8 +82,5 @@ The demo and the evaluation share `search.py`, so they always run the same searc
 
 **Run:** `pip install -r requirements.txt gradio` → `python evaluate.py` → `python app.py`
 
-## How it was built
-
-Built with an AI assistant as a pair programmer. I chose the scope, designed the test queries and labels, ran the experiments, and wrote the analysis.
 
 — Viswas Vinayakumar · [GitHub](https://github.com/Viswas-Vinayakumar) · [LinkedIn](https://www.linkedin.com/in/viswasvinayakumar)
