@@ -1,0 +1,15 @@
+{"query": "Konfliktmanagement für unser Vertriebsteam", "query_en": "Conflict management for our sales team", "relevant": {"c01": 2, "c25": 2, "c13": 1}, "tests": "synonym: no profile says 'Konfliktmanagement'"}
+{"query": "Scrum Einführung", "query_en": "Introducing Scrum", "relevant": {"c03": 2, "c21": 1}, "tests": "exact technical term"}
+{"query": "DISG Persönlichkeitstest", "query_en": "DISC personality test", "relevant": {"c15": 2}, "tests": "exact brand name"}
+{"query": "Teamcoaching für Remote-Teams", "query_en": "Team coaching for remote teams", "relevant": {"c05": 2, "c28": 2, "c12": 1}, "tests": "two good matches"}
+{"query": "Mitarbeiter haben Angst vor der neuen Software", "query_en": "Employees are afraid of the new software", "relevant": {"c08": 2}, "tests": "problem described, not the topic"}
+{"query": "Wie bleibe ich ruhig, wenn ein Kunde schreit?", "query_en": "How do I stay calm when a customer shouts?", "relevant": {"c20": 2}, "tests": "question style, no shared words"}
+{"query": "Burnout Prävention", "query_en": "Burnout prevention", "relevant": {"c07": 2, "c22": 1}, "tests": "keyword + paraphrase"}
+{"query": "sales training cold calling", "query_en": "sales training cold calling", "relevant": {"c10": 2, "c29": 1}, "tests": "English query, German profiles"}
+{"query": "Präsentationstraining", "query_en": "Presentation training", "filters": {"city": "Hamburg"}, "relevant": {"c29": 2}, "tests": "city filter"}
+{"query": "neue Führungskraft: vom Kollegen zum Chef", "query_en": "New manager: from colleague to boss", "relevant": {"c02": 2, "c30": 1}, "tests": "paraphrase"}
+{"query": "ChatGPT Workshop für Mitarbeitende", "query_en": "ChatGPT workshop for employees", "relevant": {"c11": 2}, "tests": "exact product name"}
+{"query": "Gehalt verhandeln", "query_en": "Negotiate salary", "relevant": {"c24": 2}, "tests": "German compound word + distractor (c06)"}
+{"query": "Einarbeitung neuer Kollegen im Homeoffice", "query_en": "Onboarding new colleagues while working from home", "filters": {"max_price": 1000}, "relevant": {"c18": 2, "c05": 1}, "tests": "paraphrase + price filter"}
+{"query": "Datenschutz Schulung für das ganze Team", "query_en": "Data protection training for the whole team", "relevant": {"c27": 2}, "tests": "keyword with a distractor (c11)"}
+{"query": "Strategieworkshop moderieren", "query_en": "Facilitating a strategy workshop", "filters": {"city": "Hamburg"}, "relevant": {"c16": 2}, "tests": "compound word + city filter"}
