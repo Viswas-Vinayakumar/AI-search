@@ -219,8 +219,9 @@ METHODS = {
 
 # =====================================================================
 # 6. ONE CALL FOR THE DEMO: understand -> search -> explain
+#    Ranking: hybrid (best in the evaluation). Chunks are used only to explain WHY a coach matched.
 # =====================================================================
-def search(text, method="hybrid_chunk", top=5):
+def search(text, method="hybrid", top=5):
     clean, filters = parse_query(text)
     query = clean or text
     ranked = METHODS[method](query, filters)[:top]

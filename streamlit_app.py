@@ -6,12 +6,12 @@ import streamlit as st
 
 from search import search
 
-METHOD_LABELS = {
-    "Hybrid + chunking": "hybrid_chunk",
-    "Hybrid": "hybrid",
-    "Semantic + chunking": "vector_chunk",
+METHOD_LABELS = {                                           # the first one is the default
+    "Hybrid (best in tests)": "hybrid",
     "Semantic": "vector",
     "Keyword (BM25)": "keyword",
+    "Hybrid + chunking": "hybrid_chunk",
+    "Semantic + chunking": "vector_chunk",
 }
 EXAMPLES = [
     "Konfliktlösung für unser Vertriebsteam in Hamburg, vor Ort, max. 2.000 €",
@@ -31,7 +31,7 @@ def euro(n):
 
 @st.cache_resource                                          # load the model and vectors once, not on every click
 def warm_up():
-    search("Test", "hybrid_chunk")
+    search("Test", "hybrid_chunk")                      # loads the model, profile and chunk vectors
     return True
 
 
