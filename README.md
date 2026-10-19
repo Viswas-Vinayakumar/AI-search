@@ -104,8 +104,11 @@ flowchart LR
 ├── streamlit_app.py  live demo (Streamlit)
 ├── search.py         all search logic: parser, BM25, embeddings, chunking, RRF, explanations
 ├── evaluate.py       grades every method on the golden set → results/results.md
-├── coaches.json      30 synthetic profiles (German, with English translations)
-├── golden.jsonl      15 queries with graded labels
+├── run_in_colab.ipynb run the evaluation in Google Colab
+├── notebooks/        my learning notebooks: BM25 by hand, embeddings, the encoder step by step, version 1
+├── data/
+│   ├── coaches.json  30 synthetic profiles (German, with English translations)
+│   └── golden.jsonl  15 queries with graded labels
 └── requirements.txt
 ```
 
@@ -113,5 +116,4 @@ The demo and the evaluation share `search.py`, so they always run the same searc
 
 **Run:** `pip install -r requirements.txt` → `python evaluate.py` → `streamlit run streamlit_app.py`
 
- 
- · [LinkedIn](https://www.linkedin.com/in/viswasvinayakumar)
+— Viswas Vinayakumar · [GitHub](https://github.com/Viswas-Vinayakumar) · [LinkedIn](https://www.linkedin.com/in/viswasvinayakumar)
