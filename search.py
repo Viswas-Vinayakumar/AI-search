@@ -10,7 +10,8 @@ from pathlib import Path
 
 import numpy as np
 
-DATA = Path(__file__).parent / "data"
+HERE = Path(__file__).parent
+DATA = HERE / "data" if (HERE / "data" / "coaches.json").exists() else HERE   # works with or without a data/ folder
 COACHES = json.loads((DATA / "coaches.json").read_text(encoding="utf-8"))
 BY_ID = {c["id"]: c for c in COACHES}
 IDS = [c["id"] for c in COACHES]

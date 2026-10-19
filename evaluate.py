@@ -9,10 +9,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from search import BY_ID, METHODS, parse_query
+from search import BY_ID, DATA, METHODS, parse_query
 
 ROOT = Path(__file__).parent
-GOLDEN = [json.loads(line) for line in (ROOT / "data" / "golden.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
+GOLDEN = [json.loads(line) for line in (DATA / "golden.jsonl").read_text(encoding="utf-8").splitlines() if line.strip()]
 
 # A coach with grade 2 is a "must-find" (perfect) match; grade 1 is "partly right".
 # Recall@5 and MRR@10 count only must-find coaches. nDCG@5 uses both grades.
